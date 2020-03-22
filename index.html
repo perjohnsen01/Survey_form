@@ -1,1 +1,108 @@
-<<h1 id="title"> Tell Me about Drugs</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+     body {
+       font-family: sans-serif;
+       padding-left: 33%;
+       padding-right: 33%;
+
+
+     }
+     label {
+       font-size: 18px;
+       display: ; block;
+       padding-bottom: 10px;
+     }
+     .flex-container {
+       display: flex;
+     }
+     h1 {
+       text-align: center;
+     }
+     .form_div{
+       background-color: #CA3053;
+       padding-left: 10px;
+       padding-top: 10px;
+       padding-bottom: 10px;
+     }
+     .row {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     width: 100%;
+}
+
+     .column {
+     display: flex;
+     flex-direction: column;
+     flex-basis: 100%;
+     flex: 1;
+}
+    input, select, textarea {
+      display: block;
+      width: 97%;
+      padding-bottom: 20px;
+    }
+     </style>
+
+</head>
+
+  <body>
+
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <h1 id="title">Hello World!</h1>
+        <p id="description">Tell Me About Your Drug Habbits!</p>
+
+    <div class="form_div">
+
+        <form id="survey-form">
+          <label id="name-label">Name:</label><br>
+          <input id="name" type="text" name="name" placeholder="john" required><p></p>
+          <label id="email-label">Email:</label><br>
+          <input id="email" type="email" name="name" required placeholder="na@na.eu"><p></p>
+          <label id="number-label">Number:</label><br>
+          <input id="number" type="number" name="name" required min="0" max="10" placeholder="4"><p></p>
+
+            <label id="dropdown">Experience Level?</label><br>
+              <select id=dropdown id="number">
+              <option value="1">None</option>
+              <option value="2">Little</option>
+              <option value="3">Medium</option>
+              <option value="4">Much</option>
+              <option value="5">Mega</option>
+              </select>
+
+      <p></p>
+
+          <div class="flex-container">
+            <div class="column">
+                <label id="gender">Gender</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+           </div>
+
+              <div class="column">
+                <label id="vehicle">Vehicle</label><br>
+                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                  <label for="vehicle1"> I have a bike</label><br>
+                  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                  <label for="vehicle2"> I have a car</label><br>
+                  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                  <label for="vehicle3"> I have a boat</label><br>
+              </div>
+          </div>
+            <br>
+            <textarea name="comment" form="usrform">Enter text here...</textarea>
+
+            <br>
+            <input id="submit" type="submit" name="submit">
+        </form>
+      </div>
+  </body>
+
+</html>
